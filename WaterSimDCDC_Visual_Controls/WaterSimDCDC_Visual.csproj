@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F77A301-EB1D-42D5-948B-0C7A6B6C5F4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WaterSimDCDC_Visual_Controls</RootNamespace>
+    <AssemblyName>WaterSimDCDC_Visual_Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assembly And DLL Files\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_Graphics_Util_ver_2.cs">
+      <Link>WaterSimDCDC_Controls_Graphics_Util_ver_2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamChart_V1.cs">
+      <Link>WaterSimDCDC_Controls_ParamChart_V1.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamChart_V1.designer.cs">
+      <Link>WaterSimDCDC_Controls_ParamChart_V1.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParamChart_V1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParameterTreeView.cs">
+      <Link>WaterSimDCDC_Controls_ParameterTreeView.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParameterTreeView.designer.cs">
+      <Link>WaterSimDCDC_Controls_ParameterTreeView.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParameterTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamGraph.cs">
+      <Link>WaterSimDCDC_Controls_ParamGraph.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamGraph.designer.cs">
+      <Link>WaterSimDCDC_Controls_ParamGraph.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParamGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamInput v 3.cs">
+      <Link>WaterSimDCDC_Controls_ParamInput v 3.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProcessSeclect_V_1.cs">
+      <Link>WaterSimDCDC_Controls_ProcessSeclect_V_1.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProcessSeclect_V_1.designer.cs">
+      <Link>WaterSimDCDC_Controls_ProcessSeclect_V_1.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ProcessSeclect_V_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProviderGraph.cs">
+      <Link>WaterSimDCDC_Controls_ProviderGraph.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProviderGraph.designer.cs">
+      <Link>WaterSimDCDC_Controls_ProviderGraph.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ProviderGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetAName.cs">
+      <Link>WaterSimDCDC_Dialogs_GetAName.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetAName.designer.cs">
+      <Link>WaterSimDCDC_Dialogs_GetAName.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_GetAName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetSQLServer.cs">
+      <Link>WaterSimDCDC_Dialogs_GetSQLServer.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetSQLServer.designer.cs">
+      <Link>WaterSimDCDC_Dialogs_GetSQLServer.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_GetSQLServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_HelpAbout.cs">
+      <Link>WaterSimDCDC_Dialogs_HelpAbout.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_HelpAbout.designer.cs">
+      <Link>WaterSimDCDC_Dialogs_HelpAbout.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_HelpAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_openTablename.cs">
+      <Link>WaterSimDCDC_Dialogs_openTablename.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_openTablename.designer.cs">
+      <Link>WaterSimDCDC_Dialogs_openTablename.designer.cs</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_openTablename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource_Visual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_Visual.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamChart_V1.resx">
+      <Link>WaterSimDCDC_Controls_ParamChart_V1.resx</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParamChart_V1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParameterTreeView.resx">
+      <Link>WaterSimDCDC_Controls_ParameterTreeView.resx</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParameterTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ParamGraph.resx">
+      <Link>WaterSimDCDC_Controls_ParamGraph.resx</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ParamGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProcessSeclect_V_1.resx">
+      <Link>WaterSimDCDC_Controls_ProcessSeclect_V_1.resx</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ProcessSeclect_V_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Controls_ProviderGraph.resx">
+      <Link>WaterSimDCDC_Controls_ProviderGraph.resx</Link>
+      <DependentUpon>WaterSimDCDC_Controls_ProviderGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetAName.resx">
+      <Link>WaterSimDCDC_Dialogs_GetAName.resx</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_GetAName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_GetSQLServer.resx">
+      <Link>WaterSimDCDC_Dialogs_GetSQLServer.resx</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_GetSQLServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_HelpAbout.resx">
+      <Link>WaterSimDCDC_Dialogs_HelpAbout.resx</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_HelpAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\API_SOURCE_FILES\WaterSimDCDC_Dialogs_openTablename.resx">
+      <Link>WaterSimDCDC_Dialogs_openTablename.resx</Link>
+      <DependentUpon>WaterSimDCDC_Dialogs_openTablename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_Visual.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_Visual.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\grey  round question 32 x 32.png" />
+    <Content Include="Images\grey arrow left 32 x 32.png" />
+    <Content Include="Images\grey arrow right 32 x 32.png" />
+    <Content Include="Images\grey buttondouble arrow left right  32 x 32.png" />
+    <Content Include="Images\grey circle arrow left 32 x 32.png" />
+    <Content Include="Images\Grey circle with arrow 32 x 32 4 .png" />
+    <Content Include="Images\Grey Circle with Arrow Right 32 x 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\blue buttondouble arrow left right  32 x 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\blue circle with arrow 32 x 32 4 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\green arrow left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\green round arrow going right 32 x 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\red arrow left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\red round arroe going left 32 x 32psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\red round question 32 x 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UniDb2\Projects\UniDb2\UniDb2.csproj">
+      <Project>{045be1b8-6625-4cf1-b5b2-7d60e4d4165d}</Project>
+      <Name>UniDb2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WSW_v1.0.0\WaterSim_West\Base_SIO_DB_West\WaterSim_WestStates_SIO_DB_v 2.csproj">
+      <Project>{0ed6bde9-5407-40fd-be18-38d5e63fd61d}</Project>
+      <Name>WaterSim_WestStates_SIO_DB_v 2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
